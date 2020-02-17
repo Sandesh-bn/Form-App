@@ -1,0 +1,204 @@
+body {
+  font-family: 'Roboto', sans-serif;
+   background: url(http://cdn.magdeleine.co/wp-content/uploads/2014/05/3jPYgeVCTWCMqjtb7Dqi_IMG_8251-1400x933.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+form {
+	background: white;
+	color: black;
+}
+
+h1 {
+	padding-left: 20px;
+}
+
+fieldset {
+	padding: 20px;
+}
+
+#popover-email, #popover-cpassword {
+	color: red;
+}
+
+.pw-result {
+	margin-top: 20px;
+}
+
+.tooltip-inner {
+    white-space:pre;
+    max-width:none;
+    text-align: left;
+}
+
+.progress {
+    height: 5px;
+}
+
+.control-label {
+    text-align: left !important;
+    padding-bottom: 7px;
+}
+
+.form-horizontal {
+    padding: 25px 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+
+
+.block-help {
+    font-weight: 300;
+}
+
+.terms {
+    text-decoration: underline;
+}
+
+.modal {
+    text-align: center;
+    padding: 0!important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.divider {
+    position: absolute;
+    height: 2px;
+    border: 1px solid #eee;
+    width: 100%;
+    top: 10px;
+    z-index: -5;
+}
+
+.ex-account {
+    position: relative;
+}
+
+.ex-account p {
+    background-color: rgba(255, 255, 255, 0.41);
+}
+
+
+
+.fa-file-text {
+    color: #edda39;
+}
+
+.mar-top-bot-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* button style */
+.text-holder{
+  color: orange;
+  padding-top:40px;
+}
+.button-holder{
+  padding-top:100px;
+}
+.ajax-button{
+  position:relative;
+  display:inline-block;
+  width:100%;
+  height:40px;
+  top:50%;
+  text-align:center;
+}
+.submit{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 80%;
+  height:40px;
+  background: #02b3e4;
+  border:2px solid #FFFFFF;
+  color: white;
+  font-size:17px;
+  cursor:pointer !important;
+  outline:none;
+}
+
+.submit:disabled {
+  background: #b7dae4;
+}
+.submit:disabled:hover {
+  background: #b7dae4;
+}
+
+
+.submit:hover{
+  background: #028bb1;
+}
+.loading{
+  font-size:0;
+  width:30px;
+  height:30px;
+  margin-top:5px;
+  border-radius:15px;
+  padding:0;
+  border:3px solid #02b3e4;
+  border-bottom:3px solid rgba(255,255,255,0.0);
+  border-left:3px solid rgba(255,255,255,0.0);
+  background-color:transparent !important;
+  animation-name: rotateAnimation;
+  -webkit-animation-name: wk-rotateAnimation;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes rotateAnimation {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes wk-rotateAnimation {
+    0%   {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+.fa{
+  color:green;
+  font-size:18px !important;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-9px;
+  margin-top:-9px;
+  -webkit-transform:scaleX(0) !important;
+  transform:scaleX(0) !important;
+}
+
+.finish{
+  -webkit-transform:scaleX(1) !important;
+  transform:scaleX(1) !important;
+}
+.hide-loading{
+  opacity:0;
+  -webkit-transform: rotate(0deg) !important;
+  transform: rotate(0deg) !important;
+  -webkit-transform:scale(0) !important;
+  transform:scale(0) !important;
+}
+

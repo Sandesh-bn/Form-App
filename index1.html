@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <script type="text/javascript" src="script1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                <form class="form-horizontal mar-top-bot-50" id="validateForm" onsubmit="return false;">
+                    <h1>Sign up</h1>
+                    <fieldset>
+                        <!-- Full name-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="textinput">Full Name (Optional) </label>
+                            <div class="col-md-12">
+                                <input id="full-name" name="textinput" type="text"  class="form-control input-md">
+                            </div>
+                        </div>
+                        <!-- Email input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="textinput">Email <span id="popover-email" class="hide pull-right block-help"><i class="fa fa-info-circle text-danger" aria-hidden="true"></i> Enter valid email address</span></label>
+                            <div class="col-md-12">
+                                <input id="email" name="textinput" type="text" placeholder="" class="form-control input-md">
+                            </div>
+                        </div>
+                        <!-- Password input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="passwordinput">Password <span id="popover-password-top" class="hide pull-right block-help"><i class="fa fa-info-circle text-danger" aria-hidden="true"></i> Enter a strong password</span></label>
+                            <div class="col-md-12">
+                                <input id="password" name="password" type="password" placeholder="" class="form-control input-md" data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true">
+                                <div id="popover-password" class='pw-result'>
+                                    <p>Password Strength: <span id="result"> </span></p>
+                                    <div class="progress">
+                                        <div id="password-strength" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Password input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="passwordinput">Password Confirmation <span id="popover-cpassword" class="hide pull-right block-help"><i class="fa fa-info-circle text-danger" aria-hidden="true"></i> Passwords don't match</span></label>
+                            <div class="col-md-12">
+                                <input id="confirm-password" name="confirm-password" type="password" placeholder="" class="form-control input-md">
+                            </div>
+                        </div> 
+                        
+                        
+                        <p>By clicking Sign up I agree that I have read and accepted the <a href="#!" class="terms" data-toggle="modal" data-target="#myModal">Terms and Conditions</a></p>
+                        
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class='ajax-button'>
+                                    <div class="fa fa-check done"></div>
+            <div class="fa fa-close failed"></div>
+                                    <button id="sign-up" class='submit' name="singlebutton" disabled='disabled' class="btn btn-primary btn-block" >Create an Account</button>
+                                </div>
+                                <div id="sign-up-popover" class="hide">
+                                    <p><i class="fa fa-file-text" aria-hidden="true"></i> Enter all fields to Continue</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Terms &amp; Conditions</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolores quod quos quae, blanditiis delectus velit, eaque quas facere aliquam earum in quisquam quo autem nisi, eligendi quia quibusdam aperiam?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
